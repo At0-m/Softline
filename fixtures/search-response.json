@@ -1,0 +1,61 @@
+{
+  "request_id": "fixture-search-001",
+  "index_version": "fixture-only",
+  "route": "local",
+  "intent": {
+    "product_type": "серверное оборудование",
+    "constraints": {}
+  },
+  "target": {
+    "type": "category",
+    "url": "https://shop.example.invalid/servers/",
+    "label": "Серверное оборудование"
+  },
+  "items": [
+    {
+      "id": "demo-1",
+      "title": "Сервер Альфа",
+      "url": "https://shop.example.invalid/servers/1",
+      "category": "Серверное оборудование",
+      "relation": "direct",
+      "why": "Категория фида — готовый сервер",
+      "price": null
+    },
+    {
+      "id": "demo-2",
+      "title": "Сервер Бета",
+      "url": "https://shop.example.invalid/servers/2",
+      "category": "Серверное оборудование",
+      "relation": "direct",
+      "why": "Категория фида — готовый сервер",
+      "price": null
+    },
+    {
+      "id": "demo-3",
+      "title": "Сервер Гамма",
+      "url": "https://shop.example.invalid/servers/3",
+      "category": "Серверное оборудование",
+      "relation": "direct",
+      "why": "Категория фида — готовый сервер",
+      "price": null
+    },
+    {
+      "id": "demo-4",
+      "title": "Сервер Дельта",
+      "url": "https://shop.example.invalid/servers/4",
+      "category": "Серверное оборудование",
+      "relation": "direct",
+      "why": "Категория фида — готовый сервер",
+      "price": null
+    }
+  ],
+  "counts": {
+    "direct": 4,
+    "alternative": 0,
+    "complement": 0,
+    "distinct": 4
+  },
+  "shortfall": false,
+  "reason": null,
+  "latency_ms": 12
+}
