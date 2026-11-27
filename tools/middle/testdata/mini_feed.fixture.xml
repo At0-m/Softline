@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ФИКСТУРА: синтетический мини-фид для smoke-теста profile_feed.py и match_targets.py.
+     Не является данными партнёра; в демо и индекс не попадает. Домены example.com. -->
+<yml_catalog date="2026-01-01 00:00">
+  <shop>
+    <name>example</name>
+    <currencies><currency id="RUR" rate="1"/></currencies>
+    <categories>
+      <category id="1">Софт</category>
+      <category id="2" parentId="1">Антивирусы</category>
+      <category id="3">Оборудование</category>
+    </categories>
+    <offers>
+      <offer id="10" group_id="9" available="true">
+        <name>КриптоПро CSP 5.0</name>
+        <vendor>КриптоПро</vendor>
+        <url>https://example.com/kripto-pro/abc123-10/</url>
+        <price>4200.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>2</categoryId>
+        <param name="Версия">5.0</param>
+      </offer>
+      <offer id="10" available="true"><name>ДУБЛЬ id=10</name><url>https://example.com/kripto-pro/dup-10/</url></offer>
+      <offer available="true"><name>БЕЗ id</name></offer>
+      <offer id="12" available="false">
+        <name>Эшелон Сканер-ВС</name>
+        <vendor>NPO Echelon</vendor>
+        <url>https://example.com/npo-echelon/hash-12/</url>
+        <price>0.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>999</categoryId>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>

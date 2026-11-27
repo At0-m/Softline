@@ -1,0 +1,8 @@
+# Локальные данные и выгрузки — вне Git
+/data/
+*.yml.gz.xml
+*.xlsx
+*.gz
+!tools/middle/testdata/*.fixture.*
+__pycache__/
+*.pyc
