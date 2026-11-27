@@ -1,0 +1,43 @@
+{
+  "request_id": "fixture-ui-shortfall-001",
+  "index_version": "fixture-only",
+  "route": "local",
+  "intent": {
+    "product_type": "серверное оборудование",
+    "constraints": {}
+  },
+  "target": {
+    "type": "category",
+    "url": "https://shop.example.invalid/servers/",
+    "label": "Серверное оборудование"
+  },
+  "items": [
+    {
+      "id": "demo-1",
+      "title": "Сервер Альфа",
+      "url": "https://shop.example.invalid/servers/1",
+      "category": "Серверное оборудование",
+      "relation": "direct",
+      "why": "Категория фида — готовый сервер",
+      "price": null
+    },
+    {
+      "id": "demo-2",
+      "title": "Сервер Бета",
+      "url": "https://shop.example.invalid/servers/2",
+      "category": "Серверное оборудование",
+      "relation": "direct",
+      "why": "Категория фида — готовый сервер",
+      "price": null
+    }
+  ],
+  "counts": {
+    "direct": 2,
+    "alternative": 0,
+    "complement": 0,
+    "distinct": 2
+  },
+  "shortfall": true,
+  "reason": "В снимке только два готовых сервера, остальные позиции снимка — компоненты, а не готовые решения",
+  "latency_ms": 11
+}

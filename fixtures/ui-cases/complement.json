@@ -1,0 +1,76 @@
+{
+  "request_id": "fixture-ui-complement-001",
+  "index_version": "fixture-only",
+  "route": "agent",
+  "intent": {
+    "product_type": "серверное оборудование",
+    "constraints": {}
+  },
+  "target": {
+    "type": "product",
+    "url": "https://shop.example.invalid/servers/1",
+    "label": "Сервер Альфа"
+  },
+  "items": [
+    {
+      "id": "demo-1",
+      "title": "Сервер Альфа",
+      "url": "https://shop.example.invalid/servers/1",
+      "category": "Серверное оборудование",
+      "relation": "direct",
+      "why": "Первая прямая позиция соответствует цели выдачи",
+      "price": {
+        "amount": 429000,
+        "currency": "RUB"
+      }
+    },
+    {
+      "id": "demo-2",
+      "title": "Сервер Бета",
+      "url": "https://shop.example.invalid/servers/2",
+      "category": "Серверное оборудование",
+      "relation": "direct",
+      "why": "Категория фида — готовый сервер",
+      "price": null
+    },
+    {
+      "id": "demo-3",
+      "title": "Сервер Гамма (базовая редакция)",
+      "url": "https://shop.example.invalid/servers/3",
+      "category": "Серверное оборудование",
+      "relation": "alternative",
+      "why": "Отличие от искомого: базовая редакция без второго блока питания; условие ослаблено по отказоустойчивости",
+      "price": {
+        "amount": 315000,
+        "currency": "RUB"
+      }
+    },
+    {
+      "id": "demo-ups-1",
+      "title": "ИБП Энергия 1500ВА для Сервера Альфа",
+      "url": "https://shop.example.invalid/ups/1",
+      "category": "Источники бесперебойного питания",
+      "relation": "complement",
+      "base_id": "demo-1",
+      "why": "Дополнение к «Сервер Альфа»: защита питания того же форм-фактора",
+      "price": {
+        "amount": 27400,
+        "currency": "RUB"
+      },
+      "evidence": {
+        "source_url": "https://vendor.example.invalid/compat/ups-1500",
+        "checked_at": "2026-11-20",
+        "claim": "Совместимо с Сервером Альфа ревизии 2, подтверждено матрицей совместимости вендора"
+      }
+    }
+  ],
+  "counts": {
+    "direct": 2,
+    "alternative": 1,
+    "complement": 1,
+    "distinct": 4
+  },
+  "shortfall": false,
+  "reason": null,
+  "latency_ms": 240
+}
