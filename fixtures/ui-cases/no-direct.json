@@ -1,0 +1,42 @@
+{
+  "request_id": "fixture-ui-nodirect-001",
+  "index_version": "fixture-only",
+  "route": "local",
+  "intent": {
+    "product_type": "не определён",
+    "constraints": {}
+  },
+  "target": null,
+  "items": [
+    {
+      "id": "demo-alt-1",
+      "title": "Рабочая станция Омега",
+      "url": "https://shop.example.invalid/workstations/1",
+      "category": "Рабочие станции",
+      "relation": "alternative",
+      "why": "Прямого совпадения нет: в запросе нет признаков серверного оборудования. Близкая категория — рабочие станции; условие ослаблено: это не серверное железо",
+      "price": {
+        "amount": 189000,
+        "currency": "RUB"
+      }
+    },
+    {
+      "id": "demo-alt-2",
+      "title": "Компьютер Сигма",
+      "url": "https://shop.example.invalid/pc/2",
+      "category": "Персональные компьютеры",
+      "relation": "alternative",
+      "why": "Прямого совпадения нет. Условие ослаблено: настольный ПК вместо искомого класса устройств",
+      "price": null
+    }
+  ],
+  "counts": {
+    "direct": 0,
+    "alternative": 2,
+    "complement": 0,
+    "distinct": 2
+  },
+  "shortfall": true,
+  "reason": "Прямых совпадений нет, обоснованных альтернатив в снимке две",
+  "latency_ms": 9
+}
